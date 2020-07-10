@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_game"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.aztlandev.abc.viewsFragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_abc"
+            app:destination="@id/abc" />
+    </fragment>
+    <fragment
+        android:id="@+id/about_abc"
+        android:name="com.aztlandev.abc.viewsFragments.About_abc"
+        android:label="fragment_about_abc"
+        tools:layout="@layout/fragment_about_abc" />
+    <fragment
+        android:id="@+id/abc"
+        android:name="com.aztlandev.abc.viewsFragments.Abc"
+        android:label="fragment_abc"
+        tools:layout="@layout/fragment_abc" >
+        <argument
+            android:name="value"
+            app:argType="string"
+            android:defaultValue='"none"' />
+    </fragment>
+</navigation>
