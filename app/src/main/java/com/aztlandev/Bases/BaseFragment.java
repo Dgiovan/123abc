@@ -10,7 +10,6 @@ import androidx.navigation.NavController;
 import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
-import com.aztlandev.abc.viewsFragments.Home;
 import com.aztlandev.abc.viewsFragments.HomeDirections;
 
 public abstract class BaseFragment extends Fragment {
